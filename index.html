@@ -5,18 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Validación de Formulario con Javascript</title>
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="fontawesome/fontawesome-free-6.7.2-web/css/all.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/estilos.css" media="all">
 </head>
 <body>
 	<main>
 		<form action="" class="formulario" id="formulario">
 			<!--GRUPO: USUARIO-->
-				<div class="formulario__grupo" id="grupo__usuario">
+				<div class="formulario__grupo formulario__grupo-correcto" id="grupo__usuario">
 					<label for="usuario" class="formulario__label">Usuario</label>
 					<div class="formulario__grupo-input">
 						<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Susan123">
-						<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>"
+						<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
 					</div>
 					<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 digitos y solo puede contener letras, numeros y guion bajo</p>
 				</div>
@@ -25,7 +26,7 @@
 				<label for="nombre" class="formulario__label">Nombre</label>
 				<div class="formulario__grupo-input">
 					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Susan Ayuque">
-					<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>"
+					<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
 				</div>
 				<p class="formulario__input-error">El nombre tiene que ser de 4 a 16 digitos y solo puede contener letras, numeros y guion bajo</p>
 			</div>	
@@ -35,7 +36,7 @@
 				<label for="password" class="formulario__label">Password</label>
 				<div class="formulario__grupo-input">
 					<input type="password" class="formulario__input" name="password" id="password">
-					<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>"
+					<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
 				</div>
 				<p class="formulario__input-error">El password tiene que ser de 4 a 12 digitos</p>
 			</div>
@@ -44,7 +45,7 @@
 				<label for="password2" class="formulario__label">Repetir password</label>
 				<div class="formulario__grupo-input">
 					<input type="password" class="formulario__input" name="password2" id="password2">
-					<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>"
+					<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
 				</div>
 				<p class="formulario__input-error">Ambos passwords tienen que ser iguales</p>
 			</div>
@@ -53,7 +54,7 @@
 				<label for="correo" class="formulario__label">Correo Electronico</label>
 				<div class="formulario__grupo-input">
 					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
-					<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>"
+					<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
 				</div>
 				<p class="formulario__input-error">El correo electronico solo puede contener letras, numeros, puntos guiones y guion bajo</p>
 			</div>	
@@ -62,7 +63,7 @@
 				<label for="telefono" class="formulario__label">Telefono</label>
 				<div class="formulario__grupo-input">
 					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="61444444444">
-					<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>"
+					<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
 				</div>
 				<p class="formulario__input-error">El telefono solo puede contener numeros y el máximo son 11 dígitos</p>
 			</div>
